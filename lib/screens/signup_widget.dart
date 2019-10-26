@@ -39,8 +39,8 @@ class SignupWidget extends StatelessWidget {
               1,
             ],
             colors: [
-              Color.fromARGB(255, 248, 132, 98),
-              Color.fromARGB(255, 140, 28, 140),
+              Color.fromARGB(255, 248, 161, 98),
+              Color.fromARGB(255, 28, 67, 140),
             ],
           ),
         ),
@@ -210,39 +210,39 @@ class SignupWidget extends StatelessWidget {
                 child: Stack(
                   alignment: Alignment.centerRight,
                   children: [
-                    Positioned(
-                      left: -1,
-                      child: Text(
-                        "Already gave up your soul? ",
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontSize: 15,
-                          fontFamily: "Lato",
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Positioned(
-                      right: 0,
-                      child: Container(
-                        width: 47,
-                        height: 18,
-                        child: FlatButton(
-                          onPressed: () => this.onLogInPressed(context),
-                          color: Colors.transparent,
-                          textColor: Color.fromARGB(255, 255, 255, 255),
-                          padding: EdgeInsets.all(0),
-                          child: Text(
-                            "Log In!",
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontFamily: "Lato",
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ),
+                    // Positioned(
+                    //   left: -1,
+                    //   child: Text(
+                    //     "Already gave up your soul? ",
+                    //     style: TextStyle(
+                    //       color: Color.fromARGB(255, 255, 255, 255),
+                    //       fontSize: 15,
+                    //       fontFamily: "Lato",
+                    //     ),
+                    //     textAlign: TextAlign.center,
+                    //   ),
+                    // ),
+                    // Positioned(
+                    //   right: 0,
+                    //   child: Container(
+                    //     width: 47,
+                    //     height: 18,
+                    //     child: FlatButton(
+                    //       onPressed: () => this.onLogInPressed(context),
+                    //       color: Colors.transparent,
+                    //       textColor: Color.fromARGB(255, 255, 255, 255),
+                    //       padding: EdgeInsets.all(0),
+                    //       child: Text(
+                    //         "Log In!",
+                    //         style: TextStyle(
+                    //           fontSize: 15,
+                    //           fontFamily: "Lato",
+                    //         ),
+                    //         textAlign: TextAlign.center,
+                    //       ),
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

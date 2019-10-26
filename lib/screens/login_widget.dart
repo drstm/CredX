@@ -17,14 +17,6 @@ class LoginWidget extends StatelessWidget {
   Widget build(BuildContext context) {
   
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () => this.onGroupPressed(context),
-          icon: Image.asset("assets/images/group-2.png",),
-        ),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
       body: Container(
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
@@ -36,8 +28,8 @@ class LoginWidget extends StatelessWidget {
               1,
             ],
             colors: [
-              Color.fromARGB(255, 248, 132, 98),
-              Color.fromARGB(255, 140, 28, 140),
+              Color.fromARGB(255, 248, 161, 98),
+              Color.fromARGB(255, 28, 67, 140),
             ],
           ),
         ),
@@ -54,21 +46,6 @@ class LoginWidget extends StatelessWidget {
                     color: Color.fromARGB(255, 255, 255, 255),
                     fontSize: 42,
                     letterSpacing: -1,
-                    fontFamily: "Lato",
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.topCenter,
-              child: Container(
-                margin: EdgeInsets.only(top: 20),
-                child: Text(
-                  "Welcome back.\nThe galaxy awaits you.",
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 255, 255, 255),
-                    fontSize: 18,
                     fontFamily: "Lato",
                   ),
                   textAlign: TextAlign.center,
@@ -145,10 +122,9 @@ class LoginWidget extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
             Container(
               height: 60,
-              margin: EdgeInsets.only(left: 20, right: 20, bottom: 11),
+              margin: EdgeInsets.only(left: 20, right: 20, bottom: 11, top: 15),
               child: FlatButton.icon(
                 icon: Image.asset("assets/images/icon-log-in.png",),
                 label: Text(
@@ -166,28 +142,6 @@ class LoginWidget extends StatelessWidget {
                 ),
                 textColor: Color.fromARGB(255, 217, 104, 111),
                 padding: EdgeInsets.all(0),
-              ),
-            ),
-            Align(
-              alignment: Alignment.topCenter,
-              child: Container(
-                width: 150,
-                height: 18,
-                margin: EdgeInsets.only(bottom: 19),
-                child: FlatButton(
-                  onPressed: () => this.onForgotYourPasswordPressed(context),
-                  color: Colors.transparent,
-                  textColor: Color.fromARGB(255, 255, 255, 255),
-                  padding: EdgeInsets.all(0),
-                  child: Text(
-                    "Forgot your password?",
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontFamily: "Lato",
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
               ),
             ),
           ],
